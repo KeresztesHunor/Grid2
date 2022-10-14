@@ -1,0 +1,68 @@
+body
+{
+    background-color: hsl(0, 0%, 15%);
+    color: white;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container
+{
+    margin: auto;
+}
+
+.grid
+{
+    width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: auto;
+}
+
+.grid h2
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid img
+{
+    width: 100px;
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.grid li
+{
+    margin-bottom: 10px;
+}
+
+.menu ul
+{
+    background-color: hsl(0, 0%, 10%);
+}
+
+.menu li
+{
+    display: inline;
+    padding: 25px;
+}
+
+.menu a
+{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.vonalas
+{
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
