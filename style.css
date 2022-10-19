@@ -1,68 +1,98 @@
-body
-{
-    background-color: hsl(0, 0%, 15%);
-    color: white;
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  background-color: hsl(0, 0%, 15%);
+  color: white;
 }
 
-h1
-{
-    text-align: center;
-    font-size: 50px;
+h1 {
+  margin: 0px 0px 25px 0px;
+  text-align: center;
+  font-size: 50px;
 }
 
-.container
-{
-    margin: auto;
+.container {
+  margin-bottom: 10px;
 }
 
-.grid
-{
-    width: 600px;
+.grid {
+  width: 650px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: auto;
+}
+
+.grid h2 {
+  margin: 5px 0px 5px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grid img {
+  width: 100px;
+  max-width: 200px;
+  display: block;
+  margin: auto;
+  filter: hue-rotate(15deg);
+}
+
+.grid ul {
+  margin: 5px 0px 5px 0px;
+}
+
+.grid li {
+  margin-bottom: 10px;
+  padding-right: 15px;
+}
+
+.menu {
+  background-color: hsl(0, 0%, 14%);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 25px 0px 25px 0px;
+}
+
+.menu li {
+  display: inline;
+  padding: 5px 20px 5px 20px;
+}
+
+.menu a {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.vonalas {
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+}
+
+@media only screen and (max-width: 925px) {
+  .menu li {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px 20px 5px 20px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .grid {
+    width: 350px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: auto;
-}
+  }
 
-.grid h2
-{
-    font-size: 20px;
-    text-align: center;
-}
-
-.grid img
-{
-    width: 100px;
-    max-width: 200px;
-    display: block;
-    margin: auto;
-}
-
-.grid li
-{
-    margin-bottom: 10px;
-}
-
-.menu ul
-{
-    background-color: hsl(0, 0%, 10%);
-}
-
-.menu li
-{
-    display: inline;
-    padding: 25px;
-}
-
-.menu a
-{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.vonalas
-{
-    border-left: 2px solid red;
-    border-right: 2px solid red;
+  .vonalas {
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    border-left: 0;
+    border-right: 0;
+  }
 }
