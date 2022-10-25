@@ -1,7 +1,7 @@
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0;
-  background-color: hsl(0, 0%, 15%);
+  background-color: hsl(0, 0%, 5%);
   color: white;
 }
 
@@ -12,10 +12,13 @@ h1 {
 }
 
 .container {
-  margin-bottom: 10px;
+  margin: 50px 0px 50px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
 }
 
-.grid {
+.grid1 {
   width: 650px;
   margin: auto;
   display: grid;
@@ -23,13 +26,13 @@ h1 {
   gap: auto;
 }
 
-.grid h2 {
+.grid1 h2 {
   margin: 5px 0px 5px 0px;
   font-size: 20px;
   text-align: center;
 }
 
-.grid img {
+.grid1 img {
   width: 100px;
   max-width: 200px;
   display: block;
@@ -37,13 +40,38 @@ h1 {
   filter: hue-rotate(15deg);
 }
 
-.grid ul {
+.grid1 ul {
   margin: 5px 0px 5px 0px;
 }
 
-.grid li {
+.grid1 li {
   margin-bottom: 10px;
   padding-right: 15px;
+}
+
+.grid2 {
+  width: auto;
+  max-width: 1500px;
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: 750px auto;
+  gap: auto;
+}
+
+.grid2 h1 {
+  font-size: 75px;
+  text-align: left;
+  border-bottom: 2px red solid;
+}
+
+.grid2 p {
+  font-size: 20px;
+}
+
+.grid2 img {
+  width: 500px;
+  display: block;
+  margin: auto;
 }
 
 .menu {
@@ -80,8 +108,8 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 850px) {
-  .grid {
+@media only screen and (max-width: 675px) {
+  .grid1 {
     width: 350px;
     margin: auto;
     display: grid;
@@ -94,5 +122,21 @@ h1 {
     border-bottom: 2px solid red;
     border-left: 0;
     border-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .grid2 {
+    width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .grid2 h1 {
+    font-size: 65px;
+    text-align: left;
+    border-bottom: 2px red solid;
   }
 }
